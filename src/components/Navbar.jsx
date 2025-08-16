@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <header className="bg-[#a62d2d] text-white sticky top-0 z-50 w-full">
-      <div className="  flex justify-between items-center px-4 md:px-8 h-16">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-8 h-16">
         {/* Logo */}
         <div>
           <img src={logo} alt="Logo" className="h-10 w-auto" />
