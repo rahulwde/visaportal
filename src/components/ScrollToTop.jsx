@@ -10,7 +10,8 @@ const ScrollToTop = () => {
   // Scroll Progress Calculation
   const handleScroll = () => {
     const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
     const progress = (scrollTop / docHeight) * 100;
     setScrollY(progress);
     setShowButton(scrollTop > 200); // 200px scroll হলে button দেখাবে
@@ -21,7 +22,6 @@ const ScrollToTop = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Click করলে top এ নিয়ে যাবে
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -43,7 +43,7 @@ const ScrollToTop = () => {
                 cx="28"
                 cy="28"
                 r="25"
-                stroke="#e5e7eb" // bg gray
+                stroke="#e5e7eb"
                 strokeWidth="4"
                 fill="none"
               />
@@ -51,7 +51,7 @@ const ScrollToTop = () => {
                 cx="28"
                 cy="28"
                 r="25"
-                stroke="#a62d2d" // progress color
+                stroke="#000" 
                 strokeWidth="4"
                 fill="none"
                 strokeDasharray={2 * Math.PI * 25}
@@ -61,7 +61,7 @@ const ScrollToTop = () => {
             </svg>
 
             {/* Arrow Icon */}
-            <FaArrowUp className="text-[#a62d2d] text-xl" />
+            <FaArrowUp className="text-[#000] text-xl" />
           </div>
         </motion.div>
       )}

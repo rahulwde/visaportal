@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Form, Input, Select, Button, Card, Steps } from "antd";
+import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -11,12 +12,10 @@ export default function MyApplication() {
 
   const steps = ["Submitted", "Under Review", "Approved", "Rejected"];
 
-  // Initialize AOS
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  // Load saved data from localStorage
   useEffect(() => {
     const savedData = JSON.parse(localStorage.getItem("myApplicationData"));
     const savedStep = JSON.parse(localStorage.getItem("myApplicationStep"));
@@ -24,7 +23,6 @@ export default function MyApplication() {
     if (savedStep !== null) setCurrentStep(savedStep);
   }, []);
 
-  // Save to localStorage whenever changes
   useEffect(() => {
     if (formData) {
       localStorage.setItem("myApplicationData", JSON.stringify(formData));
@@ -35,6 +33,15 @@ export default function MyApplication() {
   const onFinish = (values) => {
     setFormData(values);
     setCurrentStep(0);
+
+    // SweetAlert2 success alert
+    Swal.fire({
+      icon: "success",
+      title: "Application Submitted",
+      text: "Your visa application has been submitted successfully!",
+      showConfirmButton: true,
+      confirmButtonColor: "#a62d2d",
+    });
   };
 
   const nextStep = () => {
@@ -43,6 +50,8 @@ export default function MyApplication() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4 md:p-6">
+             <title>MY-Application | Visa Portal</title>
+
       {/* Form Card */}
       <Card
         data-aos="fade-up"
@@ -85,6 +94,12 @@ export default function MyApplication() {
               <Option value="student">Student Visa</Option>
               <Option value="work">Work Visa</Option>
               <Option value="business">Business Visa</Option>
+              <Option value="transit">Transit Visa</Option>
+              <Option value="medical">Medical Visa</Option>
+              <Option value="dependent">Dependent Visa</Option>
+              <Option value="immigrant">Immigrant Visa</Option>
+              <Option value="diploma">Diploma Visa</Option>
+              <Option value="cultural">Cultural Visa</Option>
             </Select>
           </Form.Item>
 
