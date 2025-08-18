@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Tourist Visa",
+    "description": "Short-term visa for leisure travel, sightseeing, or visiting friends and family.",
+    "processingTime": "7-10 business days",
+    "image": "https://i.ibb.co.com/ZpjTKrZY/tourist.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Business Visa",
+    "description": "Issued for business meetings, conferences, or professional engagements.",
+    "processingTime": "5-7 business days",
+    "image": "https://i.ibb.co.com/3Yyy0gkh/business-visa.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Student Visa",
+    "description": "Granted to students enrolling in educational institutions abroad.",
+    "processingTime": "15-20 business days",
+    "image": "https://i.ibb.co.com/4ZKP7DFV/student.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Work Visa",
+    "description": "Issued for foreign nationals taking up employment abroad.",
+    "processingTime": "10-15 business days",
+    "image": "https://i.ibb.co.com/YFG0Gcsd/work.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Transit Visa",
+    "description": "Required when passing through a country on the way to another destination.",
+    "processingTime": "2-3 business days",
+    "image": "https://i.ibb.co.com/hFkK2MNs/Transit-Visa.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Medical Visa",
+    "description": "For those seeking medical treatment abroad.",
+    "processingTime": "5-7 business days",
+    "image": "https://i.ibb.co.com/rGzwscMc/medical.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Dependent Visa",
+    "description": "Issued to family members of a person working or studying abroad.",
+    "processingTime": "7-10 business days",
+    "image": "https://i.ibb.co.com/wFpH9Mzg/dependent.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Immigrant Visa",
+    "description": "For individuals planning to permanently live in another country.",
+    "processingTime": "20-30 business days",
+    "image": "https://i.ibb.co.com/mVvPRdGW/imigrant.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Diplomatic Visa",
+    "description": "Issued to diplomats and government officials for official purposes.",
+    "processingTime": "5-7 business days",
+    "image": "https://i.ibb.co.com/gMsBRT9D/diploma.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Cultural Exchange Visa",
+    "description": "For participants in cultural exchange programs and events.",
+    "processingTime": "7-12 business days",
+    "image": "https://i.ibb.co.com/Z6RVfgH3/cultural.jpg"
+  }
+]

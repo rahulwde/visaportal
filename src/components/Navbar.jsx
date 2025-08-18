@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Visa Services", href: "/visa-services" },
+    { label: "Visa Services", href: "/visaService" },
     { label: "My Application", href: "/my-application" },
   ];
 
